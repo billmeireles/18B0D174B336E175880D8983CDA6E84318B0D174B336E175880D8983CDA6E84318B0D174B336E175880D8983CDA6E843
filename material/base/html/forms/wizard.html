@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html class="no-js css-menubar" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+  <meta name="description" content="bootstrap admin template">
+  <meta name="author" content="">
+  <title>DunasPlus | Cadastros</title>
+  <link rel="apple-touch-icon" href="../../assets/images/apple-touch-icon.png">
+  <link rel="shortcut icon" href="../../assets/images/favicon.ico">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../../../global/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../../global/css/bootstrap-extend.min.css">
+  <link rel="stylesheet" href="../../assets/css/site.min.css">
+  <!-- Plugins -->
+  <link rel="stylesheet" href="../../../global/vendor/animsition/animsition.css">
+  <link rel="stylesheet" href="../../../global/vendor/asscrollable/asScrollable.css">
+  <link rel="stylesheet" href="../../../global/vendor/switchery/switchery.css">
+  <link rel="stylesheet" href="../../../global/vendor/intro-js/introjs.css">
+  <link rel="stylesheet" href="../../../global/vendor/slidepanel/slidePanel.css">
+  <link rel="stylesheet" href="../../../global/vendor/flag-icon-css/flag-icon.css">
+  <link rel="stylesheet" href="../../../global/vendor/waves/waves.css">
+  <link rel="stylesheet" href="../../../global/vendor/jquery-wizard/jquery-wizard.css">
+  <link rel="stylesheet" href="../../../global/vendor/formvalidation/formValidation.css">
+  <!-- Fonts -->
+  <link rel="stylesheet" href="../../../global/fonts/material-design/material-design.min.css">
+  <link rel="stylesheet" href="../../../global/fonts/brand-icons/brand-icons.min.css">
+  <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic'>
+  <!-- Scripts -->
+  <script src="../../../global/vendor/modernizr/modernizr.js"></script>
+  <script src="../../../global/vendor/breakpoints/breakpoints.js"></script>
+  <script>
+  Breakpoints();
+  </script>
+</head>
+<body>
+
+    <!-- Page -->
+    <div class="page-content container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <!-- Panel Wizard Form -->
+          <div class="panel" id="exampleWizardForm">
+            <div class="panel-heading">
+              <h3 class="panel-title">Cadastro</h3>
+            </div>
+            <div class="panel-body">
+              <!-- Steps -->
+              <div class="steps steps-sm row" data-plugin="matchHeight" data-by-row="true" role="tablist">
+                <div class="step col-md-4 current" data-target="#exampleAccount" role="tab">
+                  <span class="step-number">1</span>
+                  <div class="step-desc">
+                    <span class="step-title">Pessoa Física</span>
+                    <p>Seus dados pessoais</p>
+                  </div>
+                </div>
+                <div class="step col-md-4" data-target="#exampleBilling" role="tab">
+                  <span class="step-number">2</span>
+                  <div class="step-desc">
+                    <span class="step-title">Pessoa Jurídica</span>
+                    <p>Informações da empresa</p>
+                  </div>
+                </div>
+                <div class="step col-md-4" data-target="#exampleGetting" role="tab">
+                  <span class="step-number">3</span>
+                  <div class="step-desc">
+                    <span class="step-title">Login</span>
+                    <p>Informações para acessar</p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Steps -->
+              <!-- Wizard Content -->
+              <div class="wizard-content">
+                <div class="wizard-pane active" id="exampleAccount" role="tabpanel">
+                  <form id="exampleAccountForm">
+                    <div class="form-group form-material">
+                      <label class="control-label" for="inputUserName">Primeiro Nome</label>
+                      <input type="text" class="form-control" id="inputUserName" name="username" required="required">
+                    </div>
+                    <div class="form-group form-material">
+                      <label class="control-label" for="inputPassword">Último Nome</label>
+                      <input type="text" class="form-control" id="inputPassword" name="password"
+                      required="required">
+                    </div>
+                    <div class="form-group form-material">
+                      <label class="control-label" for="inputEmail">E-mail</label>
+                      <input type="email" class="form-control" id="inputEmail" name="email"
+                      required="required">
+                    </div>
+                    <div class="form-group form-material">
+                      <label class="control-label" for="inputMobile">Telefone Celular</label>
+                      <input type="text" class="form-control" id="inputMobile" name="mobile"
+                      required="required">
+                    </div>
+                    <div class="form-group form-material">
+                      <label class="control-label" for="inputCpf">CPF</label>
+                      <input type="text" class="form-control" id="inputCpf" name="cpf"
+                      required="required">
+                    </div>
+                  </form>
+                </div>
+                <div class="wizard-pane" id="exampleBilling" role="tabpanel">
+                  <form id="exampleBillingForm">
+                    <div class="form-group form-material">
+                      <label class="control-label" for="inputCnpj">CNPJ</label>
+                      <input type="text" class="form-control" id="inputCnpj" name="cnpj"
+                      required="required">
+                    </div>
+                    <div class="form-group form-material">
+                      <label class="control-label" for="inputCep">CEP</label>
+                      <input type="text" class="form-control" id="inputCep" name="cep"
+                      required="required">
+                    </div>
+                    <div class="form-group form-material">
+                      <label class="control-label" for="inputNumber">Número</label>
+                      <input type="text" class="form-control" id="inputNumber" name="number"
+                      required="required">
+                    </div>
+                    <div class="form-group form-material">
+                      <label class="control-label" for="inputComplement">Complemento</label>
+                      <input type="text" class="form-control" id="inputComplement" name="complement"
+                      required="required">
+                    </div>
+                    <div class="form-group form-material">
+                      <label class="control-label" for="inputAddress">Nome / Logradouro</label>
+                      <input type="text" class="form-control" id="inputAddress" name="address" disabled="true">
+                    </div>
+                    <div class="form-group form-material">
+                      <label class="control-label" for="inputNeighborhood">Bairro / Distrito</label>
+                      <input type="text" class="form-control" id="inputNeighborhood" name="neighborhood" disabled="true">
+                    </div>
+                    <div class="form-group form-material">
+                      <label class="control-label" for="inputCity">Cidade</label>
+                      <input type="text" class="form-control" id="inputCity" name="city" disabled="true">
+                    </div>
+                    <div class="form-group form-material">
+                      <label class="control-label" for="inputState">Estado</label>
+                      <input type="text" class="form-control" id="inputState" name="state" disabled="true">
+                    </div>
+                  </form>
+                </div>
+
+                <div class="wizard-pane" id="exampleGetting" role="tabpanel">
+                  <div class="form-group form-material">
+                    <label class="control-label" for="inputEmail">E-mail / Usuário de acesso</label>
+                    <input type="email" class="form-control" id="inputEmail" name="email" placeholder="emailpasso1@email.com"
+                    required="required" disabled="true">
+                  </div>
+                  <div class="form-group form-material">
+                    <label class="control-label" for="inputPassword">Senha de acesso</label>
+                    <input type="password" class="form-control" id="inputPassword" name="password"
+                    required="required">
+                  </div>
+                </div>
+
+                <!-- <div class="wizard-pane" id="exampleGetting" role="tabpanel">
+                  <div class="text-center margin-vertical-20">
+                    <i class="icon md-check font-size-40" aria-hidden="true"></i>
+                    <h4>Tudo certo. Acesse agora o seu painel.</h4>
+                  </div>
+                </div> -->
+
+              </div>
+              <!-- End Wizard Content -->
+            </div>
+          </div>
+          <!-- End Panel Wizard One Form -->
+        </div>
+      </div>
+  </div>
+
+  <!-- Core  -->
+  <script src="../../../global/vendor/jquery/jquery.js"></script>
+  <script src="../../../global/vendor/bootstrap/bootstrap.js"></script>
+  <script src="../../../global/vendor/animsition/animsition.js"></script>
+  <script src="../../../global/vendor/asscroll/jquery-asScroll.js"></script>
+  <script src="../../../global/vendor/mousewheel/jquery.mousewheel.js"></script>
+  <script src="../../../global/vendor/asscrollable/jquery.asScrollable.all.js"></script>
+  <script src="../../../global/vendor/ashoverscroll/jquery-asHoverScroll.js"></script>
+  <script src="../../../global/vendor/waves/waves.js"></script>
+  <!-- Plugins -->
+  <script src="../../../global/vendor/switchery/switchery.min.js"></script>
+  <script src="../../../global/vendor/intro-js/intro.js"></script>
+  <script src="../../../global/vendor/screenfull/screenfull.js"></script>
+  <script src="../../../global/vendor/slidepanel/jquery-slidePanel.js"></script>
+  <script src="../../../global/vendor/formvalidation/formValidation.js"></script>
+  <script src="../../../global/vendor/formvalidation/framework/bootstrap.js"></script>
+  <script src="../../../global/vendor/matchheight/jquery.matchHeight-min.js"></script>
+  <script src="../../../global/vendor/jquery-wizard/jquery-wizard.js"></script>
+  <!-- Scripts -->
+  <script src="../../../global/js/core.js"></script>
+  <script src="../../assets/js/site.js"></script>
+  <script src="../../assets/js/sections/menu.js"></script>
+  <script src="../../assets/js/sections/menubar.js"></script>
+  <script src="../../assets/js/sections/gridmenu.js"></script>
+  <script src="../../assets/js/sections/sidebar.js"></script>
+  <script src="../../../global/js/configs/config-colors.js"></script>
+  <script src="../../assets/js/configs/config-tour.js"></script>
+  <script src="../../../global/js/components/asscrollable.js"></script>
+  <script src="../../../global/js/components/animsition.js"></script>
+  <script src="../../../global/js/components/slidepanel.js"></script>
+  <script src="../../../global/js/components/switchery.js"></script>
+  <script src="../../../global/js/components/tabs.js"></script>
+  <script src="../../../global/js/components/jquery-wizard.js"></script>
+  <script src="../../../global/js/components/matchheight.js"></script>
+  <script src="../../assets/examples/js/forms/wizard.js"></script>
+</body>
+</html>

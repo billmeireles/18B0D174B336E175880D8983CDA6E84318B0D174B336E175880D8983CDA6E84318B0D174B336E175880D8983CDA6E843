@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html class="no-js css-menubar" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+  <meta name="description" content="bootstrap admin template">
+  <meta name="author" content="">
+  <title>DunasPlus | Cadastro</title>
+  <link rel="apple-touch-icon" href="../../assets/images/apple-touch-icon.png">
+  <link rel="shortcut icon" href="../../assets/images/favicon.ico">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../../../global/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../../global/css/bootstrap-extend.min.css">
+  <link rel="stylesheet" href="../../assets/css/site.min.css">
+  <!-- Plugins -->
+  <link rel="stylesheet" href="../../../global/vendor/animsition/animsition.css">
+  <link rel="stylesheet" href="../../../global/vendor/asscrollable/asScrollable.css">
+  <link rel="stylesheet" href="../../../global/vendor/switchery/switchery.css">
+  <link rel="stylesheet" href="../../../global/vendor/intro-js/introjs.css">
+  <link rel="stylesheet" href="../../../global/vendor/slidepanel/slidePanel.css">
+  <link rel="stylesheet" href="../../../global/vendor/flag-icon-css/flag-icon.css">
+  <link rel="stylesheet" href="../../../global/vendor/waves/waves.css">
+  <link rel="stylesheet" href="../../../global/vendor/jquery-wizard/jquery-wizard.css">
+  <link rel="stylesheet" href="../../../global/vendor/formvalidation/formValidation.css">
+  <!-- Fonts -->
+  <link rel="stylesheet" href="../../../global/fonts/material-design/material-design.min.css">
+  <link rel="stylesheet" href="../../../global/fonts/brand-icons/brand-icons.min.css">
+  <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic'>
+  <!--[if lt IE 9]>
+    <script src="../../../global/vendor/html5shiv/html5shiv.min.js"></script>
+    <![endif]-->
+  <!--[if lt IE 10]>
+    <script src="../../../global/vendor/media-match/media.match.min.js"></script>
+    <script src="../../../global/vendor/respond/respond.min.js"></script>
+    <![endif]-->
+  <!-- Scripts -->
+  <script src="../../../global/vendor/modernizr/modernizr.js"></script>
+  <script src="../../../global/vendor/breakpoints/breakpoints.js"></script>
+  <script>
+  Breakpoints();
+  </script>
+</head>
+<body class="site-navbar-small">
+  <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+  <nav class="site-navbar navbar navbar-inverse navbar-fixed-top navbar-mega" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle hamburger hamburger-close navbar-toggle-left hided"
+      data-toggle="menubar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="hamburger-bar"></span>
+      </button>
+      <button type="button" class="navbar-toggle collapsed" data-target="#site-navbar-collapse"
+      data-toggle="collapse">
+        <i class="icon md-more" aria-hidden="true"></i>
+      </button>
+      <a class="navbar-brand navbar-brand-center" href="../index.html">
+        <img class="navbar-brand-logo navbar-brand-logo-normal" src="../../assets/images/dunasplus-logo.png"
+        title="Remark">
+        <img class="navbar-brand-logo navbar-brand-logo-special" src="../../assets/images/dunasplus-logo.png"
+        title="Remark">
+        <!-- <span class="navbar-brand-text hidden-xs"> Remark</span> -->
+      </a>
+    </div>
+    <div class="navbar-container container-fluid">
+      <!-- Navbar Collapse -->
+      <div class="collapse navbar-collapse navbar-collapse-toolbar" id="site-navbar-collapse">
+        <!-- Navbar Toolbar -->
+        <ul class="nav navbar-toolbar">
+          <li class="hidden-float" id="toggleMenubar">
+            <a data-toggle="menubar" href="#" role="button">
+              <i class="icon hamburger hamburger-arrow-left">
+                  <span class="sr-only">Toggle menubar</span>
+                  <span class="hamburger-bar"></span>
+                </i>
+            </a>
+          </li>
+          <li class="hidden-xs" id="toggleFullscreen">
+            <a class="icon icon-fullscreen" data-toggle="fullscreen" href="#" role="button">
+              <span class="sr-only">Toggle fullscreen</span>
+            </a>
+          </li>
+        </ul>
+        <!-- End Navbar Toolbar Right -->
+      </div>
+      <!-- End Navbar Collapse -->
+      <!-- Site Navbar Seach -->
+      <div class="collapse navbar-search-overlap" id="site-navbar-search">
+        <form role="search">
+          <div class="form-group">
+            <div class="input-search">
+              <i class="input-search-icon md-search" aria-hidden="true"></i>
+              <input type="text" class="form-control" name="site-search" placeholder="Search...">
+              <button type="button" class="input-search-close icon md-close" data-target="#site-navbar-search"
+              data-toggle="collapse" aria-label="Close"></button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- End Site Navbar Seach -->
+    </div>
+  </nav>
+
+  <!-- Page -->
+  <div class="page animsition">
+    <div class="page-content container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <!-- Panel Wizard Form -->
+          <div class="panel" id="exampleWizardForm">
+            <div class="panel-heading">
+              <h3 class="panel-title">Cadastro</h3>
+            </div>
+            <div class="panel-body">
+              <!-- Steps -->
+              <div class="steps steps-sm row" data-plugin="matchHeight" data-by-row="true" role="tablist">
+                <div class="step col-md-4 current" data-target="#exampleAccount" role="tab">
+                  <span class="step-number">1</span>
+                  <div class="step-desc">
+                    <span class="step-title">Pessoa Física</span>
+                    <p>Seus dados pessoais</p>
+                  </div>
+                </div>
+                <div class="step col-md-4" data-target="#exampleBilling" role="tab">
+                  <span class="step-number">2</span>
+                  <div class="step-desc">
+                    <span class="step-title">Pessoa Jurídica</span>
+                    <p>Informações da empresa</p>
+                  </div>
+                </div>
+                <div class="step col-md-4" data-target="#exampleGetting" role="tab">
+                  <span class="step-number">3</span>
+                  <div class="step-desc">
+                    <span class="step-title">Login</span>
+                    <p>Informações para acessar</p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Steps -->
+
+              <!-- Modal -->
+              <div class="modal fade" id="examplePositionCenter" aria-hidden="true" aria-labelledby="examplePositionCenter"
+              role="dialog" tabindex="-1">
+                <div class="modal-dialog modal-center">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                      </button>
+                      <h4 class="modal-title">Limite de Crédito Pré-Aprovado</h4>
+                    </div>
+                    <div class="modal-body">
+                      R$<h2 id="credit"></h2>
+                      <p style="color:red;">Os valores estão sujeitos a alteração</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default btn-pure" data-dismiss="modal">Close</button>
+                      <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Modal -->
+
+              <!-- Wizard Content -->
+              <div class="wizard-content">
+                <div class="wizard-pane active" id="exampleAccount" role="tabpanel">
+                  <form id="exampleAccountForm">
+                    <div class="form-group form-material">
+                      <label class="control-label" for="inputUserName">Primeiro Nome</label>
+                      <input type="text" class="form-control" id="inputUserName" name="username" required="required">
+                    </div>
+                    <div class="form-group form-material">
+                      <label class="control-label" for="inputPassword">Último Nome</label>
+                      <input type="text" class="form-control" id="inputPassword" name="password"
+                      required="required">
+                    </div>
+                    <div class="form-group form-material">
+                      <label class="control-label" for="inputEmail">E-mail</label>
+                      <input type="email" class="form-control" id="inputEmail" name="email"
+                      required="required">
+                    </div>
+                    <div class="form-group form-material">
+                      <label class="control-label" for="inputMobile">Telefone Celular</label>
+                      <input type="text" class="form-control" id="inputMobile" name="mobile"
+                      required="required">
+                    </div>
+                    <div class="form-group form-material">
+                      <label class="control-label" for="inputCpf">CPF</label>
+                      <input type="text" class="form-control" id="inputCpf" name="cpf"
+                      required="required">
+                    </div>
+                  </form>
+                </div>
+                <div class="wizard-pane" id="exampleBilling" role="tabpanel">
+                  <form id="exampleBillingForm">
+                    <div class="form-group form-material">
+                      <label class="control-label" for="inputCnpj">CNPJ</label>
+                      <input type="text" class="form-control" id="inputCnpj" name="cnpj"
+                      required="required">
+                    </div>
+                    <div class="form-group form-material">
+                      <label class="control-label" for="inputFaturamento">Faturamento</label>
+                      <input type="number" class="form-control" id="inputFaturamento" name="faturamento"
+                      required="required">
+                    </div>
+                    <div class="form-group form-material">
+                      <label class="control-label" for="inputFaturamento">Prazo</label>
+                      <div id="inputFaturamento">
+                        <div data-toggle="buttons" role="group">
+                          <label class="btn btn-primary col-md-2">
+                            <input type="radio" class="options" name='options' autocomplete="off" value="1" id="30dias"/>
+                            <i class="icon md-check text-active" aria-hidden="true"></i>30 dias
+                          </label>
+                          <label class="btn btn-primary active col-md-2">
+                            <input type="radio" class="options" name='options' autocomplete="off" value="2" id="60dias" checked/>
+                            <i class="icon md-check text-active" aria-hidden="true"></i>60 dias
+                          </label>
+                          <label class="btn btn-primary col-md-2">
+                            <input type="radio" class="options" name='options' autocomplete="off" value="3" id="90dias" />
+                            <i class="icon md-check text-active" aria-hidden="true"></i>90 dias
+                          </label>
+                          <label class="btn btn-primary col-md-2">
+                            <input type="radio" class="options" name='options' autocomplete="off" value="4" id="120dias" />
+                            <i class="icon md-check text-active" aria-hidden="true"></i>120 dias
+                          </label>
+                          <label class="btn btn-primary col-md-2">
+                            <input type="radio" class="options" name='options' autocomplete="off" value="5" id="150dias" />
+                            <i class="icon md-check text-active" aria-hidden="true"></i>150 dias
+                          </label>
+                          <label class="btn btn-primary col-md-2">
+                            <input type="radio" class="options" name='options' autocomplete="off" value="6" id="180dias" />
+                            <i class="icon md-check text-active" aria-hidden="true"></i>180 dias
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group form-material">
+                      <label class="control-label" for="inputCep">CEP</label>
+                      <input type="text" class="form-control" id="inputCep" name="cep"
+                      required="required">
+                    </div>
+                    <div class="form-group form-material">
+                      <label class="control-label" for="inputNumber">Número</label>
+                      <input type="text" class="form-control" id="inputNumber" name="number"
+                      required="required">
+                    </div>
+                    <div class="form-group form-material">
+                      <label class="control-label" for="inputComplement">Complemento</label>
+                      <input type="text" class="form-control" id="inputComplement" name="complement"
+                      required="required">
+                    </div>
+                    <div class="form-group form-material">
+                      <label class="control-label" for="inputAddress">Nome / Logradouro</label>
+                      <input type="text" class="form-control" id="inputAddress" name="address" disabled="true">
+                    </div>
+                    <div class="form-group form-material">
+                      <label class="control-label" for="inputNeighborhood">Bairro / Distrito</label>
+                      <input type="text" class="form-control" id="inputNeighborhood" name="neighborhood" disabled="true">
+                    </div>
+                    <div class="form-group form-material">
+                      <label class="control-label" for="inputCity">Cidade</label>
+                      <input type="text" class="form-control" id="inputCity" name="city" disabled="true">
+                    </div>
+                    <div class="form-group form-material">
+                      <label class="control-label" for="inputState">Estado</label>
+                      <input type="text" class="form-control" id="inputState" name="state" disabled="true">
+                    </div>
+                  </form>
+                </div>
+
+                <div class="wizard-pane" id="exampleGetting" role="tabpanel">
+                  <div class="form-group form-material">
+                    <label class="control-label" for="inputEmail">E-mail / Usuário de acesso</label>
+                    <input type="email" class="form-control" id="inputEmail" name="email" placeholder="emailpasso1@email.com"
+                    required="required" disabled="true">
+                  </div>
+                  <div class="form-group form-material">
+                    <label class="control-label" for="inputPassword">Senha de acesso</label>
+                    <input type="password" class="form-control" id="inputPassword" name="password"
+                    required="required">
+                  </div>
+                </div>
+
+                <!-- <div class="wizard-pane" id="exampleGetting" role="tabpanel">
+                  <div class="text-center margin-vertical-20">
+                    <i class="icon md-check font-size-40" aria-hidden="true"></i>
+                    <h4>Tudo certo. Acesse agora o seu painel.</h4>
+                  </div>
+                </div> -->
+
+              </div>
+              <!-- End Wizard Content -->
+            </div>
+          </div>
+          <!-- End Panel Wizard One Form -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Page -->
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="site-footer-legal">© 2017 <a href="https://dunasplus.com/site/">Dunasplus</a></div>
+  </footer>
+
+
+
+  <!-- Core  -->
+  <script src="../../../global/vendor/jquery/jquery.js"></script>
+  <script src="../../../global/vendor/bootstrap/bootstrap.js"></script>
+  <script src="../../../global/vendor/animsition/animsition.js"></script>
+  <script src="../../../global/vendor/asscroll/jquery-asScroll.js"></script>
+  <script src="../../../global/vendor/mousewheel/jquery.mousewheel.js"></script>
+  <script src="../../../global/vendor/asscrollable/jquery.asScrollable.all.js"></script>
+  <script src="../../../global/vendor/ashoverscroll/jquery-asHoverScroll.js"></script>
+  <script src="../../../global/vendor/waves/waves.js"></script>
+  <!-- Plugins -->
+  <script src="../../../global/vendor/switchery/switchery.min.js"></script>
+  <script src="../../../global/vendor/intro-js/intro.js"></script>
+  <script src="../../../global/vendor/screenfull/screenfull.js"></script>
+  <script src="../../../global/vendor/slidepanel/jquery-slidePanel.js"></script>
+  <script src="../../../global/vendor/formvalidation/formValidation.js"></script>
+  <script src="../../../global/vendor/formvalidation/framework/bootstrap.js"></script>
+  <script src="../../../global/vendor/matchheight/jquery.matchHeight-min.js"></script>
+  <script src="../../../global/vendor/jquery-wizard/jquery-wizard.js"></script>
+  <!-- Scripts -->
+  <script src="../../../global/js/core.js"></script>
+  <script src="../../assets/js/site.js"></script>
+  <script src="../../assets/js/sections/menu.js"></script>
+  <script src="../../assets/js/sections/menubar.js"></script>
+  <script src="../../assets/js/sections/sidebar.js"></script>
+  <script src="../../../global/js/configs/config-colors.js"></script>
+  <script src="../../assets/js/configs/config-tour.js"></script>
+  <script src="../../../global/js/components/asscrollable.js"></script>
+  <script src="../../../global/js/components/animsition.js"></script>
+  <script src="../../../global/js/components/slidepanel.js"></script>
+  <script src="../../../global/js/components/switchery.js"></script>
+  <script src="../../../global/js/components/tabs.js"></script>
+  <script src="../../../global/js/components/jquery-wizard.js"></script>
+  <script src="../../../global/js/components/matchheight.js"></script>
+  <script src="../../assets/examples/js/forms/wizard.js"></script>
+  <script>
+
+    // function checkPrazo(ckd){
+    //   $(ckd).prop("checked", true)
+    // }
+
+    $(document).ready(function(){
+
+      $('.options').change(function(){
+          // $(this).prop("checked", true)
+          $('.options').prop('checked', false);
+          $(this).prop('checked', true);
+          calculate();
+      });
+
+      $("#inputFaturamento").focusout(function(){
+          calculate();
+      });
+
+      function calculate(){
+        // porcentagem... 40%
+        var divida = 0.25;
+        var faturamento = $("#inputFaturamento").val();
+        var prazo = $('input[name=options]:checked', '#exampleBillingForm').val();
+        // alert(prazo);
+        var potencial = (faturamento*prazo);
+        var endividamento = (potencial*divida);
+        var fomentavel = (potencial-endividamento);
+        var credito_disponivel = (fomentavel/2);
+        // alert(credito_disponivel);
+
+        $("#examplePositionCenter #credit").html(credito_disponivel);
+        $('#examplePositionCenter').modal('show')
+      }
+    });
+  </script>
+</body>
+</html>
