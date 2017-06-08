@@ -6353,7 +6353,8 @@ a:focus {
 .counter > .counter-number,
 .counter .counter-number-group {
   font-size: 20px;
-  color: #424242;
+  /*color: #424242;*/
+  color: #fff;
 }
 .counter-label {
   display: block;
@@ -7297,7 +7298,7 @@ div.widget-title {
   margin-top: .5em;
   margin-bottom: 0;
   overflow: hidden;
-  font-size: 16px;
+  font-size: 12px;
   color: #616161;
   text-overflow: ellipsis;
   word-wrap: normal;
@@ -7310,9 +7311,9 @@ div.widget-title {
 }
 .pearl.current .pearl-number,
 .pearl.current .pearl-icon {
-  color: #3f51b5;
+  color: #4caf50;
   background-color: #fff;
-  border-color: #3f51b5;
+  border-color: #4caf50;
   -webkit-transform: scale(1.3);
       -ms-transform: scale(1.3);
        -o-transform: scale(1.3);
@@ -7346,13 +7347,13 @@ div.widget-title {
 }
 .pearl.done:before,
 .pearl.done:after {
-  background-color: #3f51b5;
+  background-color: #4caf50;
 }
 .pearl.done .pearl-number,
 .pearl.done .pearl-icon {
   color: #fff;
-  background-color: #3f51b5;
-  border-color: #3f51b5;
+  background-color: #4caf50;
+  border-color: #4caf50;
 }
 .pearls-lg .pearl:before,
 .pearls-lg .pearl:after {

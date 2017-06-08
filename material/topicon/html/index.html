@@ -73,6 +73,8 @@
     </div>
     <div class="navbar-container container-fluid">
       <!-- Navbar Collapse -->
+
+
       <div class="collapse navbar-collapse navbar-collapse-toolbar" id="site-navbar-collapse">
         <!-- Navbar Toolbar -->
         <ul class="nav navbar-toolbar">
@@ -89,10 +91,21 @@
               <span class="sr-only">Toggle fullscreen</span>
             </a>
           </li>
+
         </ul>
         <!-- End Navbar Toolbar -->
         <!-- Navbar Toolbar Right -->
         <ul class="nav navbar-toolbar navbar-right navbar-toolbar-right">
+          <li>
+            <div class="example-wrap">
+              <div class="counter inline-block text-right margin-right-20 hidden-xs">
+                <div style="color:#fff;">Tx Crédito</div>
+                <span class="counter-number font-weight-medium">8,785</span>
+              </div>
+              <span data-plugin="peityBar" data-width="90" data-height="38" data-padding="0.25"
+              data-skin="blue">5,3,9,6,5,9,7,3,5,2</span>
+            </div>
+          </li>
           <li class="dropdown">
             <a class="navbar-avatar dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false"
             data-animation="scale-up" role="button">
@@ -206,40 +219,67 @@
 
               <div class="example-wrap">
                 <div class="example table-responsive">
-                  <table class="table">
+                  <table class="table table-striped">
                     <thead>
                       <tr>
-                        <th>Nome Sacado</th>
-                        <th>Valor Nota</th>
-                        <th>Nome Arquivo XML</th>
-                        <th>Andamento</th>
+                        <th><b>Nome Sacado</b></th>
+                        <th><b>Valor Nota</b></th>
+                        <!-- <th>Nome Arquivo XML</th> -->
+                        <th><b>Andamento</b></th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr class="">
-                        <th>Sacado Um</th>
-                        <th>3.000,89</th>
-                        <th>1.750835181564476E7.xml</th>
                         <th>
-                            <div class="pie-progress pie-progress-sm" data-plugin="pieProgress" data-barcolor="#4caf50"
-                            data-goal="100" aria-valuenow="20" data-size="100" data-barsize="4"
-                            role="progressbar">
-                            <div class="pie-progress-number">20%</div>
-                              <div class="pie-progress-label">
-                                <i class="icon md-eye" aria-hidden="true"></i>
+                          <a href="#" style="color:#3949ab;font-weight:bold;text-decoration: none;">Sacado Um</a>
+                        </th>
+                        <th><b>3.000,89</b></th>
+                        <!-- <th>1.750835181564476E7.xml</th> -->
+                        <!-- <th>
+                          <div class="pie-progress pie-progress-sm" data-plugin="pieProgress" data-barcolor="#4caf50"
+                          data-goal="100" aria-valuenow="20" data-size="100" data-barsize="4"
+                          role="progressbar">
+                          <div class="pie-progress-number">20%</div>
+                            <div class="pie-progress-label">
+                              <i class="icon md-eye" aria-hidden="true"></i>
+                            </div>
+                          </div>
+                        </th> -->
+                        <th>
+                          <div class="example-wrap">
+                            <div class="example">
+                              <div class="pearls row">
+                                <div class="pearl done col-xs-3">
+                                  <span class="pearl-number">1</span>
+                                  <span class="pearl-title">NFe Carregada</span>
+                                </div>
+                                <div class="pearl current col-xs-2">
+                                  <span class="pearl-number">2</span>
+                                  <span class="pearl-title">Validação</span>
+                                </div>
+                                <div class="pearl col-xs-2">
+                                  <span class="pearl-number">3</span>
+                                  <span class="pearl-title">Aprovado</span>
+                                </div>
+                                <div class="pearl col-xs-2">
+                                  <span class="pearl-number">4</span>
+                                  <span class="pearl-title">Análise</span>
+                                </div>
+                                <div class="pearl col-xs-3">
+                                  <span class="pearl-number">5</span>
+                                  <span class="pearl-title">Creditado Conta</span>
+                                </div>
                               </div>
                             </div>
-                              <!-- <div class="pie-progress-number">90%</div>
-                              <div class="pie-progress-label">
-                                <i class="icon md-eye" aria-hidden="true"></i>
-                              </div> -->
-                            </div>
+                          </div>
                         </th>
                       </tr>
                       <tr class="">
-                        <th>Sacado Dois</th>
-                        <th>5.000,89</th>
-                        <th>3.750835181564476E7.xml</th>
+                        <th>
+                          <a href="#" style="color:#3949ab;font-weight:bold;text-decoration: none;">Sacado Dois</a>
+                        </th>
+                        <th><b>5.000,89</b></th>
+                        <!-- <th>3.750835181564476E7.xml</th>
                         <th>
                           <div class="pie-progress pie-progress-sm" data-plugin="pieProgress" data-barcolor="#4caf50"
                           data-goal="100" aria-valuenow="40" data-size="100" data-barsize="4"
@@ -249,13 +289,42 @@
                               <i class="icon md-eye" aria-hidden="true"></i>
                             </div>
                           </div>
-                          <!-- <a class="btn btn-primary widget-readMore" href="javascript:void(0)">Desconte já</a> -->
+                        </th> -->
+                        <th>
+                          <div class="example-wrap">
+                            <div class="example">
+                              <div class="pearls row">
+                                <div class="pearl done col-xs-3">
+                                  <span class="pearl-number">1</span>
+                                  <span class="pearl-title">NFe Carregada</span>
+                                </div>
+                                <div class="pearl done col-xs-2">
+                                  <span class="pearl-number">2</span>
+                                  <span class="pearl-title">Validação</span>
+                                </div>
+                                <div class="pearl current col-xs-2">
+                                  <span class="pearl-number">3</span>
+                                  <span class="pearl-title">Aprovado</span>
+                                </div>
+                                <div class="pearl col-xs-2">
+                                  <span class="pearl-number">4</span>
+                                  <span class="pearl-title">Análise</span>
+                                </div>
+                                <div class="pearl col-xs-3">
+                                  <span class="pearl-number">5</span>
+                                  <span class="pearl-title">Creditado Conta</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </th>
                       </tr>
                       <tr class="">
-                        <th>Sacado Três</th>
-                        <th>1.000,89</th>
-                        <th>4.750835181564476E7.xml</th>
+                        <th>
+                          <a href="#" style="color:#3949ab;font-weight:bold;text-decoration: none;">Sacado Três</a>
+                        </th>
+                        <th><b>1.000,89</b></th>
+                        <!-- <th>4.750835181564476E7.xml</th>
                         <th>
                           <div class="pie-progress pie-progress-sm" data-plugin="pieProgress" data-barcolor="#4caf50"
                           data-goal="100" aria-valuenow="75" data-size="100" data-barsize="4"
@@ -271,12 +340,42 @@
                               Descontar
                             </button>
                           </div>
+                        </th> -->
+                        <th>
+                          <div class="example-wrap">
+                            <div class="example">
+                              <div class="pearls row">
+                                <div class="pearl done col-xs-3">
+                                  <span class="pearl-number">1</span>
+                                  <span class="pearl-title">NFe Carregada</span>
+                                </div>
+                                <div class="pearl done col-xs-2">
+                                  <span class="pearl-number">2</span>
+                                  <span class="pearl-title">Validação</span>
+                                </div>
+                                <div class="pearl done col-xs-2">
+                                  <span class="pearl-number">3</span>
+                                  <span class="pearl-title">Aprovado</span>
+                                </div>
+                                <div class="pearl current col-xs-2">
+                                  <span class="pearl-number">4</span>
+                                  <span class="pearl-title">Análise</span>
+                                </div>
+                                <div class="pearl col-xs-3">
+                                  <span class="pearl-number">5</span>
+                                  <span class="pearl-title">Creditado Conta</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </th>
                       </tr>
                       <tr class="">
-                        <th>Sacado Quatro</th>
-                        <th>900,89</th>
-                        <th>5.750835181564476E7.xml</th>
+                        <th>
+                          <a href="#" style="color:#3949ab;font-weight:bold;text-decoration: none;">Sacado Quatro</a>
+                        </th>
+                        <th><b>900,89</b></th>
+                        <!-- <th>5.750835181564476E7.xml</th>
                         <th>
                           <div class="pie-progress pie-progress-sm" data-plugin="pieProgress" data-barcolor="#4caf50"
                           data-goal="100" aria-valuenow="80" data-size="100" data-barsize="4"
@@ -286,12 +385,42 @@
                               <i class="icon md-eye" aria-hidden="true"></i>
                             </div>
                           </div>
+                        </th> -->
+                        <th>
+                          <div class="example-wrap">
+                            <div class="example">
+                              <div class="pearls row">
+                                <div class="pearl done col-xs-3">
+                                  <span class="pearl-number">1</span>
+                                  <span class="pearl-title">NFe Carregada</span>
+                                </div>
+                                <div class="pearl done col-xs-2">
+                                  <span class="pearl-number">2</span>
+                                  <span class="pearl-title">Validação</span>
+                                </div>
+                                <div class="pearl done col-xs-2">
+                                  <span class="pearl-number">3</span>
+                                  <span class="pearl-title">Aprovado</span>
+                                </div>
+                                <div class="pearl done col-xs-2">
+                                  <span class="pearl-number">4</span>
+                                  <span class="pearl-title">Análise</span>
+                                </div>
+                                <div class="pearl current col-xs-3">
+                                  <span class="pearl-number">5</span>
+                                  <span class="pearl-title">Creditado Conta</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </th>
                       </tr>
                       <tr class="">
-                        <th>Sacado Cinco</th>
-                        <th>700,59</th>
-                        <th>7.750835181564476E7.xml</th>
+                        <th>
+                          <a href="#" style="color:#3949ab;font-weight:bold;text-decoration: none;">Sacado Cinco</a>
+                        </th>
+                        <th><b>700,59</b></th>
+                        <!-- <th>7.750835181564476E7.xml</th>
                         <th>
                           <div class="pie-progress pie-progress-sm" data-plugin="pieProgress" data-barcolor="#4caf50"
                           data-goal="100" aria-valuenow="100" data-size="100" data-barsize="4"
@@ -301,13 +430,42 @@
                               <i class="icon md-eye" aria-hidden="true"></i>
                             </div>
                           </div>
+                        </th> -->
+                        <th>
+                          <div class="example-wrap">
+                            <div class="example">
+                              <div class="pearls row">
+                                <div class="pearl done col-xs-3">
+                                  <span class="pearl-number">1</span>
+                                  <span class="pearl-title">NFe Carregada</span>
+                                </div>
+                                <div class="pearl done col-xs-2">
+                                  <span class="pearl-number">2</span>
+                                  <span class="pearl-title">Validação</span>
+                                </div>
+                                <div class="pearl done col-xs-2">
+                                  <span class="pearl-number">3</span>
+                                  <span class="pearl-title">Aprovado</span>
+                                </div>
+                                <div class="pearl done col-xs-2">
+                                  <span class="pearl-number">4</span>
+                                  <span class="pearl-title">Análise</span>
+                                </div>
+                                <div class="pearl done col-xs-3">
+                                  <span class="pearl-number">5</span>
+                                  <span class="pearl-title">Creditado Conta</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </th>
                       </tr>
                       <tr class="">
-                        <th>Sacado Seis</th>
-                        <th>780,89</th>
-                        <th>9.750835181564476E7.xml</th>
-                        <!-- <th>Não Autorizado</th> -->
+                        <th>
+                          <a href="#" style="color:#3949ab;font-weight:bold;text-decoration: none;">Sacado Seis</a>
+                        </th>
+                        <th><b>780,89</b></th>
+                        <!-- <th>9.750835181564476E7.xml</th>
                         <th>
                           <div class="pie-progress pie-progress-sm" data-plugin="pieProgress" data-barcolor="#e53935"
                           data-goal="100" aria-valuenow="100" data-size="100" data-barsize="4"
@@ -315,6 +473,34 @@
                           <div class="pie-progress-number">100%</div>
                             <div class="pie-progress-label">
                               <i class="icon md-eye" aria-hidden="true"></i>
+                            </div>
+                          </div>
+                        </th> -->
+                        <th>
+                          <div class="example-wrap">
+                            <div class="example">
+                              <div class="pearls row">
+                                <div class="pearl done col-xs-3">
+                                  <span class="pearl-number">1</span>
+                                  <span class="pearl-title">NFe Carregada</span>
+                                </div>
+                                <div class="pearl current col-xs-2">
+                                  <span class="pearl-number">2</span>
+                                  <span class="pearl-title">Validação</span>
+                                </div>
+                                <div class="pearl col-xs-2">
+                                  <span class="pearl-number">3</span>
+                                  <span class="pearl-title">Aprovado</span>
+                                </div>
+                                <div class="pearl col-xs-2">
+                                  <span class="pearl-number">4</span>
+                                  <span class="pearl-title">Análise</span>
+                                </div>
+                                <div class="pearl col-xs-3">
+                                  <span class="pearl-number">5</span>
+                                  <span class="pearl-title">Creditado Conta</span>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </th>
