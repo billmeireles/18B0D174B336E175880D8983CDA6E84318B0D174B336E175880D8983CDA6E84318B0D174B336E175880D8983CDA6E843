@@ -21,10 +21,15 @@
   <link rel="stylesheet" href="../../global/vendor/slidepanel/slidePanel.css">
   <link rel="stylesheet" href="../../global/vendor/flag-icon-css/flag-icon.css">
   <link rel="stylesheet" href="../../global/vendor/waves/waves.css">
+  <link rel="stylesheet" href="../../global/css/bootstrap-extend.min.css">
   <link rel="stylesheet" href="../../global/vendor/chartist-js/chartist.css">
   <link rel="stylesheet" href="../../global/vendor/jvectormap/jquery-jvectormap.css">
   <link rel="stylesheet" href="../../global/vendor/chartist-plugin-tooltip/chartist-plugin-tooltip.css">
   <link rel="stylesheet" href="../assets/examples/css/dashboard/v1.css">
+  <link rel="stylesheet" href="../../global/vendor/aspieprogress/asPieProgress.css">
+  <link rel="stylesheet" href="../assets/examples/css/charts/pie-progress.css">
+  <link rel="stylesheet" href="../../global/vendor/alertify-js/alertify.css">
+  <link rel="stylesheet" href="../assets/examples/css/advanced/alertify.css">
   <!-- Fonts -->
   <link rel="stylesheet" href="../../global/fonts/material-design/material-design.min.css">
   <link rel="stylesheet" href="../../global/fonts/brand-icons/brand-icons.min.css">
@@ -97,16 +102,16 @@
               </span>
             </a>
             <ul class="dropdown-menu" role="menu">
-              <!-- <li role="presentation">
-                <a href="javascript:void(0)" role="menuitem"><i class="icon md-account" aria-hidden="true"></i> Profile</a>
-              </li>
               <li role="presentation">
+                <a href="javascript:void(0)" role="menuitem"><i class="icon md-account" aria-hidden="true"></i> Meu Perfil</a>
+              </li>
+              <!-- <li role="presentation">
                 <a href="javascript:void(0)" role="menuitem"><i class="icon md-card" aria-hidden="true"></i> Billing</a>
               </li>
               <li role="presentation">
                 <a href="javascript:void(0)" role="menuitem"><i class="icon md-settings" aria-hidden="true"></i> Settings</a>
-              </li>
-              <li class="divider" role="presentation"></li> -->
+              </li>-->
+              <li class="divider" role="presentation"></li>
               <li role="presentation">
                 <a href="javascript:void(0)" role="menuitem"><i class="icon md-power" aria-hidden="true"></i> Sair</a>
               </li>
@@ -184,43 +189,135 @@
             <div class="panel-body">
               <!-- End Example Responsive -->
               <!-- Example Contextual Classes -->
+
+              <style>
+                .btn-cash-left {
+                  width: 80px;
+                  height: 80px;
+                  padding: 0;
+                  margin: 0;
+                  font-size: 15px;
+                  text-align: center;
+                  border-radius: 100%;
+                  -webkit-box-shadow: 0 6px 10px rgba(0,0,0,.15);
+                  box-shadow: 0 6px 10px rgba(0,0,0,.15);
+                }
+              </style>
+
               <div class="example-wrap">
                 <div class="example table-responsive">
                   <table class="table">
                     <thead>
                       <tr>
-                        <th>Nome Arquivo</th>
-                        <th>Situação</th>
+                        <th>Nome Sacado</th>
+                        <th>Valor Nota</th>
+                        <th>Nome Arquivo XML</th>
+                        <th>Andamento</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr class="">
-                        <td>1.750835181564476E7.xml</td>
-                        <td>Aguardando Processamento</td>
-                      </tr>
-                      <tr class="info">
-                        <td>3.750835181564476E7.xml</td>
-                        <td>Sucesso</td>
+                        <th>Sacado Um</th>
+                        <th>3.000,89</th>
+                        <th>1.750835181564476E7.xml</th>
+                        <th>
+                            <div class="pie-progress pie-progress-sm" data-plugin="pieProgress" data-barcolor="#4caf50"
+                            data-goal="100" aria-valuenow="20" data-size="100" data-barsize="4"
+                            role="progressbar">
+                            <div class="pie-progress-number">20%</div>
+                              <div class="pie-progress-label">
+                                <i class="icon md-eye" aria-hidden="true"></i>
+                              </div>
+                            </div>
+                              <!-- <div class="pie-progress-number">90%</div>
+                              <div class="pie-progress-label">
+                                <i class="icon md-eye" aria-hidden="true"></i>
+                              </div> -->
+                            </div>
+                        </th>
                       </tr>
                       <tr class="">
-                        <td>4.750835181564476E7.xml</td>
-                        <td>Aguardando Processamento</td>
+                        <th>Sacado Dois</th>
+                        <th>5.000,89</th>
+                        <th>3.750835181564476E7.xml</th>
+                        <th>
+                          <div class="pie-progress pie-progress-sm" data-plugin="pieProgress" data-barcolor="#4caf50"
+                          data-goal="100" aria-valuenow="40" data-size="100" data-barsize="4"
+                          role="progressbar">
+                          <div class="pie-progress-number">40%</div>
+                            <div class="pie-progress-label">
+                              <i class="icon md-eye" aria-hidden="true"></i>
+                            </div>
+                          </div>
+                          <!-- <a class="btn btn-primary widget-readMore" href="javascript:void(0)">Desconte já</a> -->
+                        </th>
                       </tr>
                       <tr class="">
-                        <td>5.750835181564476E7.xml</td>
-                        <td>Aguardando Processamento</td>
-                      </tr>
-                      <tr class="warning">
-                        <td>7.750835181564476E7.xml</td>
-                        <td>Processando</td>
+                        <th>Sacado Três</th>
+                        <th>1.000,89</th>
+                        <th>4.750835181564476E7.xml</th>
+                        <th>
+                          <div class="pie-progress pie-progress-sm" data-plugin="pieProgress" data-barcolor="#4caf50"
+                          data-goal="100" aria-valuenow="75" data-size="100" data-barsize="4"
+                          role="progressbar">
+                          <div class="pie-progress-number">
+                            <button mouseOver="alert('teste')"
+                              type="button"
+                              class="site-action-toggle btn-raised btn btn-success btn-cash-left"
+                              id="confirm"
+                              data-plugin="alertify"
+                              data-type="confirm"
+                              data-confirm-title="This is a confirm dialog">
+                              Descontar
+                            </button>
+                          </div>
+                        </th>
                       </tr>
                       <tr class="">
-                        <td>8.750835181564476E7.xml</td>
-                        <td>Aguardando Processamento</td>
+                        <th>Sacado Quatro</th>
+                        <th>900,89</th>
+                        <th>5.750835181564476E7.xml</th>
+                        <th>
+                          <div class="pie-progress pie-progress-sm" data-plugin="pieProgress" data-barcolor="#4caf50"
+                          data-goal="100" aria-valuenow="80" data-size="100" data-barsize="4"
+                          role="progressbar">
+                          <div class="pie-progress-number">80%</div>
+                            <div class="pie-progress-label">
+                              <i class="icon md-eye" aria-hidden="true"></i>
+                            </div>
+                          </div>
+                        </th>
                       </tr>
-                      <tr class="danger">
-                        <td>9.750835181564476E7.xml</td>
-                        <td>Não Autorizado</td>
+                      <tr class="">
+                        <th>Sacado Cinco</th>
+                        <th>700,59</th>
+                        <th>7.750835181564476E7.xml</th>
+                        <th>
+                          <div class="pie-progress pie-progress-sm" data-plugin="pieProgress" data-barcolor="#4caf50"
+                          data-goal="100" aria-valuenow="100" data-size="100" data-barsize="4"
+                          role="progressbar">
+                          <div class="pie-progress-number">100%</div>
+                            <div class="pie-progress-label">
+                              <i class="icon md-eye" aria-hidden="true"></i>
+                            </div>
+                          </div>
+                        </th>
+                      </tr>
+                      <tr class="">
+                        <th>Sacado Seis</th>
+                        <th>780,89</th>
+                        <th>9.750835181564476E7.xml</th>
+                        <!-- <th>Não Autorizado</th> -->
+                        <th>
+                          <div class="pie-progress pie-progress-sm" data-plugin="pieProgress" data-barcolor="#e53935"
+                          data-goal="100" aria-valuenow="100" data-size="100" data-barsize="4"
+                          role="progressbar">
+                          <div class="pie-progress-number">100%</div>
+                            <div class="pie-progress-label">
+                              <i class="icon md-eye" aria-hidden="true"></i>
+                            </div>
+                          </div>
+                        </th>
                       </tr>
                     </tbody>
                   </table>
@@ -299,6 +396,8 @@
   <script src="../../global/vendor/jvectormap/maps/jquery-jvectormap-world-mill-en.js"></script>
   <script src="../../global/vendor/matchheight/jquery.matchHeight-min.js"></script>
   <script src="../../global/vendor/peity/jquery.peity.min.js"></script>
+  <script src="../../global/vendor/aspieprogress/jquery-asPieProgress.js"></script>
+  <script src="../../global/vendor/alertify-js/alertify.js"></script>
   <!-- Scripts -->
   <script src="../../global/js/core.js"></script>
   <script src="../assets/js/site.js"></script>
@@ -317,5 +416,8 @@
   <script src="../../global/js/components/peity.js"></script>
   <script src="../assets/examples/js/dashboard/v1.js"></script>
   <script src="../../global/js/plugins/action-btn.js"></script>
+  <script src="../../global/js/components/aspieprogress.js"></script>
+  <script src="../assets/examples/js/charts/pie-progress.js"></script>
+  <script src="../../global/js/components/alertify-js.js"></script>
 </body>
 </html>
