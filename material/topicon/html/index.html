@@ -30,6 +30,9 @@
   <link rel="stylesheet" href="../assets/examples/css/charts/pie-progress.css">
   <link rel="stylesheet" href="../../global/vendor/alertify-js/alertify.css">
   <link rel="stylesheet" href="../assets/examples/css/advanced/alertify.css">
+  <link rel="stylesheet" href="../../global/vendor/webui-popover/webui-popover.css">
+  <link rel="stylesheet" href="../../global/vendor/toolbar/toolbar.css">
+  <link rel="stylesheet" href="../assets/examples/css/uikit/tooltip-popover.css">
   <!-- Fonts -->
   <link rel="stylesheet" href="../../global/fonts/material-design/material-design.min.css">
   <link rel="stylesheet" href="../../global/fonts/brand-icons/brand-icons.min.css">
@@ -255,7 +258,7 @@
                                 </div>
                                 <div class="pearl current col-xs-2">
                                   <span class="pearl-number">2</span>
-                                  <span class="pearl-title">Validação</span>
+                                  <span class="pearl-title">Análise<br>Crédito</span>
                                 </div>
                                 <div class="pearl col-xs-2">
                                   <span class="pearl-number">3</span>
@@ -263,7 +266,7 @@
                                 </div>
                                 <div class="pearl col-xs-2">
                                   <span class="pearl-number">4</span>
-                                  <span class="pearl-title">Análise</span>
+                                  <span class="pearl-title">Análise<br>Documentação</span>
                                 </div>
                                 <div class="pearl col-xs-3">
                                   <span class="pearl-number">5</span>
@@ -484,10 +487,26 @@
                                   <span class="pearl-number">1</span>
                                   <span class="pearl-title">NFe Carregada</span>
                                 </div>
-                                <div class="pearl current error col-xs-2">
+                                <!-- <div class="pearl current error col-xs-2">
                                   <span class="pearl-number">2</span>
                                   <span class="pearl-title">Validação</span>
+                                </div> -->
+
+
+                                <div class="pearl current error col-xs-2">
+
+                                    <button class="btn btn-info" data-content="Problema..."
+                                    data-trigger="hover" data-toggle="popover" data-original-title="Hover to trigger"
+                                    tabindex="0" title="" type="button">
+                                      <span class="pearl-number">2</span>
+                                    </button>
+
+                                    <span class="pearl-title">Validação</span>
                                 </div>
+
+
+
+
                                 <div class="pearl col-xs-2">
                                   <span class="pearl-number">3</span>
                                   <span class="pearl-title">Aprovado</span>
@@ -584,6 +603,8 @@
   <script src="../../global/vendor/peity/jquery.peity.min.js"></script>
   <script src="../../global/vendor/aspieprogress/jquery-asPieProgress.js"></script>
   <script src="../../global/vendor/alertify-js/alertify.js"></script>
+  <script src="../../global/vendor/webui-popover/jquery.webui-popover.min.js"></script>
+  <script src="../../global/vendor/toolbar/jquery.toolbar.min.js"></script>
   <!-- Scripts -->
   <script src="../../global/js/core.js"></script>
   <script src="../assets/js/site.js"></script>
@@ -605,5 +626,8 @@
   <script src="../../global/js/components/aspieprogress.js"></script>
   <script src="../assets/examples/js/charts/pie-progress.js"></script>
   <script src="../../global/js/components/alertify-js.js"></script>
+  <script src="../../global/js/components/webui-popover.js"></script>
+  <script src="../../global/js/components/toolbar.js"></script>
+  <script src="../assets/examples/js/uikit/tooltip-popover.js"></script>
 </body>
 </html>
